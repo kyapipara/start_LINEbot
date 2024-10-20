@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>LINEBot_start</title>
+    <style>
+        /* タイトルのスタイル */
+        h1 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 送信ボタンのスタイル */
+        #button2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #button2:hover {
+            background-color: #0056b3;
+        }
+
+        /* 数値入力ボックスのサイズを変更 */
+        input[type="number"] {
+            width: 175px;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+
+        /* セレクトボックスのスタイル */
+        select {
+            width: 180px;
+            height: 35px;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* テキストエリアのスタイル */
+        textarea {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>旅行開始</h1>
+    <center>
+        <form action="#" method="post">
+
+            <p>国名</p>
+            <select name="buy" id="pet-select">
+                <option value="" selected hidden></option>
+                <option value="America">アメリカ</option>
+                <option value="China">中国</option>
+                <option value="Taiwan">台湾</option>
+                <option value="Thai">タイ</option>
+                <option value="Korea">韓国</option>
+                <option value="Italy">イタリア</option>
+            </select>
+            <p>所持金<br>
+                <input type="number" size="10" name="name">
+            </p>
+            <p><input type="button" value="送信" id="button2"></p>
+        </form>
+    </center>
+
+
+</body>
+
+</html>
